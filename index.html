@@ -39,23 +39,23 @@
 
 
 
-        <section class=" lang mb-3">
+        <section class=" lang m-1">
             <select class="btn btn-dark" onchange="onSetLang(this.value)">
                 <option value="en">English</option>
                 <option value="he">עברית</option>
             </select>
         </section>
-        <section class="filter container d-flex justify-content-between">
+        <section class="filter container d-md-flex justify-content-between">
 
-            <select class="btn btn-dark" onchange="onSetSort({[this.value]:this.value})">
+            <select class="btn btn-dark m-1" onchange="onSetSort({[this.value]:this.value})">
                 <option value="" data-trans="sort">Sort By</option>
                 <option value="descending-price" data-trans="sort-price">Max Price</option>
                 <option value="rating" data-trans="sort-rating">Minimum Rating</option>
             </select>
 
-            <input oninput="onSetFilter(type,this.value)" type="text" placeholder="Search book here"
+            <input class="m-1" oninput="onSetFilter(type,this.value)" type="text" placeholder="Search book here"
                 data-trans="filter-placeholder" />
-                <button class="btn btn-dark" onclick="onAddBookModal()" data-trans="add">Add Book</button>
+                <button class="btn btn-dark m-1" onclick="onAddBookModal()" data-trans="add">Add Book</button>
         </section>
 
 
