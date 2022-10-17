@@ -37,7 +37,7 @@ function renderBooks() {
             `
             <div class="book">
                 <div class="description text-warning"><span data-trans="${book.name.toLowerCase()}">${book.name}</span>, ${formatCurrency(book.price)}</div>
-                <img src="./img/book-pictures/${book.image}.jpg" alt="book img"/>
+                <img src="img/book-pictures/${book.image}.jpg" alt="book img">
                 <div class="book-actions"><button class="read btn btn-primary" onclick="onReadBook('${book.id}')" data-trans="read">Read</button>
                 <button class="update btn btn-warning" onclick="onUpdateBook('${book.id}')" data-trans="update">Update</button>
                 <button class="remove btn btn-danger" onclick="onRemoveBook('${book.id}')">X</button> </div>
